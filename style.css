@@ -1,0 +1,494 @@
+html{
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+	width: 6px;
+}
+
+::-webkit-scrollbar-track{
+	border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb{
+	background: #404040;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background: #999999;
+}
+
+body{
+	background-color: #000000;
+}
+
+/*Header content*/
+.logo{
+	position: absolute;
+	left: 15px;
+	top: 11px;
+}
+
+.heading{
+	overflow: hidden;
+	font-family: 'Calligraffitti', cursive;
+	text-align: center;
+	font-size: 30pt;
+	color: #e19400;
+	margin-top: 0;
+	margin-bottom: 0;	
+}
+
+.heading:before,
+.heading:after{
+    background-color: #e19400;
+    content: "";
+    display: inline-block;
+    height: 5px;
+    position: relative;
+    vertical-align: middle;
+    width: 25%;
+}
+
+ul{
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #000000;
+	width: 1000px;
+	padding: 0px;
+	margin: 0px auto;
+	border-radius: 5px;
+}
+
+li{
+	float: left;
+	margin: 4px 35px;
+}
+
+li a, .dropbtn{
+	display: inline-block;
+	color: #ffffff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: 'Gruppo', cursive;
+	font-size: 10pt;
+	border-radius: 5px;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+	background-color: #0d0d0d;
+}
+
+li.dropdown{
+	display: inline-block;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #000000;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	border-radius: 5px;
+}
+
+.dropdown-content a{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	color: #ffffff;
+}
+
+.dropdown-content a:hover{
+	background-color: #0d0d0d
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+
+.wish{
+	position: absolute;
+	margin-top: 12px;
+	right: 132px;
+	top: 0;
+}
+
+.basket{
+	position: absolute;
+	margin-top: 12px;
+	right: 82px;
+	top: 0;
+}
+
+.user{
+	position: absolute;
+	margin-top: 12px;
+	right: 32px;
+	top: 0;
+}
+
+.search{
+	position: absolute;
+	margin-top: 6px;
+	right: 110px;
+	width: 200px;
+	display: inline-block;
+	color: #ffffff;
+	text-align: left;
+	padding: 10px 16px;
+	text-decoration: none;
+	font-family: 'Gruppo', cursive;
+	font-size: 10pt;
+	border-radius: 20px;
+	background-color: #000000
+}
+
+.submit{
+	position: absolute;
+	margin-top: 6px;
+	right: 32px;
+	display: inline-block;
+	color: #ffffff;
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
+	font-family: 'Gruppo', cursive;
+	font-size: 10pt;
+	border-radius: 20px;
+	background-color: #000000
+}
+
+.submit:hover{
+	background-color: #404040;
+}
+
+/*Image slider*/
+.slide-container{
+	max-width: 1366px;
+	position: relative;
+	margin: auto;
+}
+
+.btn{
+	position: relative;
+	top: -30px;
+	height: 10px;
+	width: 10px;
+	margin: 0 2px;
+	background-color: #b3b3b3;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.8s ease;
+}
+
+.active{
+	background-color: #666666;
+}
+
+.fade{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@keyframes fade{
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+div.transbox1{
+	position: absolute;
+	margin: 23px;
+	background-color: #000000;
+	width: 30%;
+	height: 19%;
+	border: 1px solid white;
+}
+
+.textbox1_heading{
+	font-family: 'Sniglet', cursive;
+	text-align: center;
+	color: #ffffff;
+}
+
+.textbox1_content{
+	font-family: 'Satisfy', cursive;
+	text-align: center;
+	color: #ffffff;
+}
+
+div.transbox2{
+	position: absolute;
+	left: 33.33%;
+	margin: 23px;
+	background-color: #000000;
+	width: 30%;
+	height: 19%;
+	border: 1px solid white;
+}
+
+.textbox2_heading{
+	font-family: 'Sniglet', cursive;
+	text-align: center;
+	color: #ffffff;
+}
+
+.textbox2_content{
+	font-family: 'Satisfy', cursive;
+	text-align: center;
+	color: #ffffff;
+}
+
+div.transbox3{
+	position: absolute;
+	left: 66%;
+	margin: 23px;
+	background-color: #000000;
+	width: 30%;
+	height: 19%;
+	border: 1px solid white;
+}
+
+.textbox3_heading{
+	font-family: 'Sniglet', cursive;
+	text-align: center;
+	color: #ffffff;
+}
+
+.textbox3_content{
+	font-family: 'Satisfy', cursive;
+	text-align: center;
+	color: #ffffff;
+}
+
+.foot-line{
+	margin-top: 165px;
+}
+
+/*Footer content*/
+.vl{
+	position: absolute;
+	border-left: 1px groove white;
+	height: 120px;
+	margin-left: 30%;
+}
+
+.footer-heading-1{
+	position: absolute;
+	margin-left: 8px;
+	color: white;
+	margin-top: 0px;
+	font-family: 'Baloo Chettan', cursive;
+	font-size: 12pt;
+}
+
+.footer-heading-2{
+	position: absolute;
+	margin-left: 220px;
+	color: white;
+	margin-top: 0px;
+	font-family: 'Baloo Chettan', cursive;
+	font-size: 12pt;
+}
+
+.faboutus{
+	color: white;
+	font-family: 'Didact Gothic', sans-serif;
+	margin-left: 8px;
+	padding-top: 35px;
+	font-size: 9pt;
+}
+
+.fprivacy{
+	color: white;
+	font-family: 'Didact Gothic', sans-serif;
+	margin-left: 8px;
+	padding-top: 0px auto;
+	font-size: 9pt;
+}
+
+.fterms{
+	color: white;
+	font-family: 'Didact Gothic', sans-serif;
+	margin-left: 8px;
+	padding-top: 0px auto;
+	font-size: 9pt;
+}
+
+.fmyacc{
+	position: absolute;
+	margin-left: 220px;
+	color: white;
+	font-family: 'Didact Gothic', sans-serif;
+	margin-top: 35px;
+	font-size: 9pt;
+}
+
+.fsizeg{
+	position: absolute;
+	margin-left: 220px;
+	color: white;
+	font-family: 'Didact Gothic', sans-serif;
+	margin-top: 63px;
+	font-size: 9pt;
+}
+
+.fcontactus{
+	position: absolute;
+	margin-left: 220px;
+	color: white;
+	font-family: 'Didact Gothic', sans-serif;
+	margin-top: 91px;
+	font-size: 9pt;
+}
+
+.subnewslet{
+	position: absolute;
+	margin-left: 425px;
+	color: white;
+	margin-top: 0px;
+	font-family: 'Baloo Chettan', cursive;
+	font-size: 12pt;
+}
+
+.subsemail{
+	position: absolute;
+	margin-top: 35px;
+	margin-left: 425px;
+	width: 300px;
+	display: inline-block;
+	color: #ffffff;
+	text-align: left;
+	padding: 10px 16px;
+	text-decoration: none;
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 9pt;
+	border-radius: 10px;
+	background-color: #000000
+}
+
+.subscribe{
+	position: absolute;
+	margin-top: 35px;
+	margin-left: 770px;
+	display: inline-block;
+	color: #ffffff;
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 9pt;
+	border-radius: 10px;
+	background-color: #000000
+}
+
+.subscribe:hover{
+	background-color: #404040;
+}
+
+.copyrights{
+	margin-top: 91px;
+	position: absolute;
+	color: white;
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 9pt;
+	left: 41%
+}
+
+.vlend{
+	position: absolute;
+	border-left: 1px groove white;
+	height: 120px;
+	margin-left: 70%;
+}
+
+.followus{
+	position: absolute;
+	margin-left: 965px;
+	color: white;
+	margin-top: 10px;
+	font-family: 'Baloo Chettan', cursive;
+	font-size: 12pt;
+}
+
+.payments{
+	position: absolute;
+	margin-left: 965px;
+	color: white;
+	margin-top: 65px;
+	font-family: 'Baloo Chettan', cursive;
+	font-size: 12pt;
+}
+
+.social-facebook{
+	position: absolute;
+	margin-top: 5px;
+	right: 250px;
+}
+
+.social-twitter{
+	position: absolute;
+	margin-top: 5px;
+	right: 215px;
+}
+
+.social-instagram{
+	position: absolute;
+	margin-top: 5px;
+	right: 179px;
+}
+
+.social-linkedin{
+	position: absolute;
+	margin-top: 5px;
+	right: 143px;
+}
+
+.social-whatsapp{
+	position: absolute;
+	margin-top: 5px;
+	right: 107px;
+}
+
+.payamex{
+	position: absolute;
+	margin-top: 55px;
+	right: 219px;
+}
+
+.payvisa{
+	position: absolute;
+	margin-top: 55px;
+	right: 152px;
+}
+
+.paymaster{
+	position: absolute;
+	margin-top: 55px;
+	right: 85px;
+}
+
+.paypaypal{
+	position: absolute;
+	margin-top: 55px;
+	right: 18px;
+}
+.gotopbtn{
+	position: fixed;
+	width: 45px;
+	height: 45px;
+	bottom: 45px;
+	right: 35px;
+}
